@@ -1,12 +1,14 @@
 package com.codepath.apps.restclienttemplate.models;
 
+import org.parceler.Parcel;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
-
+@Parcel
 /**
  * Given a date String of the format given by the Twitter API, returns a display-formatted
  * String representing the relative time difference, e.g. "2m", "6d", "23 May", "1 Jan 14"

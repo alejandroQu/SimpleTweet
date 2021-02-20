@@ -5,16 +5,20 @@ import android.icu.text.RelativeDateTimeFormatter;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Parcel
 public class Tweet {
+    public TimeFormatter TimeFormatter;
+
     public String body;
     public String createdAt;
     public User user;
-    public TimeFormatter TimeFormatter;
 
+
+    public Tweet() {}
 
     public static Tweet fromJson(JSONObject jsonObject) throws JSONException {
         Tweet tweet = new Tweet();
